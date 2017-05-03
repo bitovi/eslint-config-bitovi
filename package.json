@@ -5,5 +5,9 @@
   "main": "configurations/es6.js",
   "repository": "https://github.com/bitovi/eslint-config-bitovi-base.git",
   "author": "Josh Dean <me@imjoshdean.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-plugin-filenames": "^1.2.0",
+    "eslint-plugin-promise": "^3.5.0"
+  }
 }

@@ -7,6 +7,8 @@ module.exports = {
     '../eslint/strict/off',
     '../eslint/stylistic/off',
     '../eslint/variables/off',
+    '../filenames/off',
+    '../promise/off',
   ],
   parserOptions: {
     ecmaVersion: 5,
