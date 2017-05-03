@@ -1,9 +1,9 @@
 {
-  "name": "eslint-config-bitovi-base",
+  "name": "eslint-config-bitovi",
   "version": "0.0.0",
-  "description": "This package provides Bitovi's base .eslintrc as an extensible shared config. Edit",
-  "main": "index.js",
+  "description": "This package provides Bitovi's .eslintrc as an extensible shared config.",
+  "main": "configurations/es6.js",
   "repository": "https://github.com/bitovi/eslint-config-bitovi-base.git",
-  "author": "Josh Dean <josh@bitovi.com>",
+  "author": "Josh Dean <me@imjoshdean.com>",
   "license": "MIT"
 }
