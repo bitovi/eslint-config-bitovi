@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     '../eslint/best-practices/on',
     '../eslint/errors/on',
-    '../eslint/node/on',
+    '../eslint/node/off',
     '../eslint/strict/on',
     '../eslint/stylistic/on',
     '../eslint/variables/on',
@@ -15,7 +15,9 @@ module.exports = {
     sourceType: "script",
     ecmaFeatures: { }
   },
-  env: { },
+  env: {
+    amd: true
+  },
   globals: { },
   rules: { }
 };
