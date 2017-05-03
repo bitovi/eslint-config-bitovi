@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ["filenames"],
+  plugins: ["promise"],
   rules: {
     // enforces the use of catch on un-returned promises.
     'catch-or-return': 0,
