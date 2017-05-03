@@ -3,7 +3,8 @@
 module.exports = {
   extends: [
     './es5',
-    '../rules/eslint/es6/on'
+    '../rules/eslint/es6/on',
+    '../rules/promise/on'
   ],
   parser: 'babel-eslint',
   parserOptions: {
