@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   // require or disallow initialization in variable declarations
   'init-declarations': 0,

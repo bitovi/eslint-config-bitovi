@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   // require or disallow initialization in variable declarations
   'init-declarations': 0,
@@ -22,7 +24,7 @@ module.exports = {
   // disallow unused variables
   'no-unused-vars': ['error', {
     vars: 'all',
-    args: 'after-used',
+    args: 'after-used'
 
   }],
   // disallow the use of variables before they are defined

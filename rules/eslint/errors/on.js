@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   // disallow await inside of loops
   'no-await-in-loop': 'error',
@@ -20,9 +22,7 @@ module.exports = {
   // disallow duplicate case labels
   'no-duplicate-case': 'error',
   // disallow empty block statements
-  'no-empty': ['error', {
-    allowEmptyCatch: true
-  }],
+  'no-empty': ['error', {allowEmptyCatch: true}],
   // disallow empty character classes in regular expressions
   'no-empty-character-class': 'error',
   // disallow reassigning exceptions in catch clauses

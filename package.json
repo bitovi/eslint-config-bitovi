@@ -6,6 +6,9 @@
   "repository": "https://github.com/bitovi/eslint-config-bitovi-base.git",
   "author": "Josh Dean <me@imjoshdean.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "eslint --fix configurations rules"
+  },
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-plugin-filenames": "^1.2.0",

@@ -2,7 +2,7 @@
 
 module.exports = {
   extends: [
-    './es5',
+    './es6',
     '../eslint/node/on'
   ],
   env: {node: true}

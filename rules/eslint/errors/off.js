@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   // disallow await inside of loops
   'no-await-in-loop': 0,

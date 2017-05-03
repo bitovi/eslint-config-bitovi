@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   extends: [
     '../eslint/best-practices/on',
@@ -9,15 +11,13 @@ module.exports = {
     '../filenames/on',
     '../promise/on'
   ],
-  parser: "babel-eslint", 
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 5,
-    sourceType: "script",
+    sourceType: 'script',
     ecmaFeatures: { }
   },
-  env: {
-    amd: true
-  },
+  env: {amd: true},
   globals: { },
   rules: { }
 };

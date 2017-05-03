@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   // from eslint/errors
   // disallow template literal placeholder syntax in regular strings
@@ -16,9 +18,7 @@ module.exports = {
   // disallow reassigning class members
   'no-class-assign': 'error',
   // disallow arrow functions where they could be confused with comparisons
-  'no-confusing-arrow': ['error', {
-    allowParens: true
-  }],
+  'no-confusing-arrow': ['error', {allowParens: true}],
   // disallow reassigning const variables
   'no-const-assign': 'error',
   // disallow duplicate class members
@@ -67,4 +67,4 @@ module.exports = {
   'template-curly-spacing': 'error',
   // require or disallow spacing around the * in yield* expressions
   'yield-star-spacing': 'error'
-}
+};

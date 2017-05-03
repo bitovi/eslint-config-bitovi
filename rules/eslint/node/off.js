@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   // require return statements after callbacks
   'callback-return': 0,

@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   extends: [
     '../eslint/best-practices/off',
@@ -8,11 +10,11 @@ module.exports = {
     '../eslint/stylistic/off',
     '../eslint/variables/off',
     '../filenames/off',
-    '../promise/off',
+    '../promise/off'
   ],
   parserOptions: {
     ecmaVersion: 5,
-    sourceType: "script",
+    sourceType: 'script',
     ecmaFeatures: { }
   },
   env: { },

@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   // require braces around arrow function bodies
   'arrow-body-style': 0,
