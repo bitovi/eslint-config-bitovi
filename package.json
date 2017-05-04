@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-bitovi",
   "description": "This package provides Bitovi's .eslintrc as an extensible shared config.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Josh Dean <me@imjoshdean.com>",
   "license": "MIT",
   "homepage": "https://github.com/bitovi/eslint-config-bitovi",
@@ -16,9 +16,7 @@
   "engines": {
     "node": ">= 4.0.0"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-plugin-filenames": "^1.2.0",
