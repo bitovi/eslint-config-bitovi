@@ -16,3 +16,10 @@ $ npm install --save-dev eslint eslint-config-bitovi
 ```
 
 ## Using This Config
+
+### Configurations
+
+### Using What You Want
+
+## JavaScript Style Guide
+
