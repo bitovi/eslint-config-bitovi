@@ -11,9 +11,15 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
-    ecmaFeatures: {impliedStrict: true}
+    ecmaFeatures: {
+      impliedStrict: true
+    }
   },
-  env: {es6: true},
-  globals: {},
-  rules: {}
+  env: {
+    es6: true
+  },
+  globals: {
+  },
+  rules: {
+  }
 };

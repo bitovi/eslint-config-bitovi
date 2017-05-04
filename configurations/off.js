@@ -16,9 +16,17 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 5,
     sourceType: 'script',
-    ecmaFeatures: { }
+    ecmaFeatures: {
+
+    }
   },
-  env: { },
-  globals: { },
-  rules: { }
+  env: {
+
+  },
+  globals: {
+
+  },
+  rules: {
+
+  }
 };

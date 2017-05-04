@@ -35,7 +35,9 @@ module.exports = {
     // disallow specified identifiers
     'id-blacklist': 0,
     // enforce minimum and maximum identifier lengths
-    'id-length': ['warn', {min: 2}],
+    'id-length': ['warn', {
+      min: 2
+    }],
     // require identifiers to match a specified regular expression
     'id-match': 0,
     // enforce consistent indentation
@@ -71,7 +73,9 @@ module.exports = {
     // enforce newlines between operands of ternary expressions
     'multiline-ternary': 0,
     // require constructor names to begin with a capital letter
-    'new-cap': 'error',
+    'new-cap': ['error', {
+      capIsNewExceptionPattern: '\\.extend'
+    }],
     // require parentheses when invoking a constructor with no arguments
     'new-parens': 'error',
     // require or disallow an empty line after variable declarations
@@ -123,11 +127,13 @@ module.exports = {
     // enforce the location of single-line statements
     'nonblock-statement-body-position': 0,
     // enforce consistent line breaks inside braces
-    'object-curly-newline': 'error',
+    'object-curly-newline': ['error', 'always'],
     // enforce consistent spacing inside braces
     'object-curly-spacing': 0,
     // enforce placing object properties on separate lines
-    'object-property-newline': ['error', {allowMultiplePropertiesPerLine: true}],
+    'object-property-newline': ['error', {
+      allowMultiplePropertiesPerLine: true
+    }],
     // enforce variables to be declared either together or separately in functions
     'one-var': ['error', 'never'],
     // require or disallow newlines around variable declarations
@@ -137,11 +143,13 @@ module.exports = {
     // enforce consistent linebreak style for operators
     'operator-linebreak': 'error',
     // require or disallow padding within blocks
-    'padded-blocks': ['error', 'always'],
+    'padded-blocks': ['error', 'never'],
     // require quotes around object literal property names
     'quote-props': ['error', 'as-needed'],
     // enforce the consistent use of either backticks, double, or single quotes
-    quotes: ['error', 'single', {allowTemplateLiterals: true}],
+    quotes: ['error', 'single', {
+      allowTemplateLiterals: true
+    }],
     // require JSDoc comments
     'require-jsdoc': 0,
     // require or disallow semicolons instead of ASI

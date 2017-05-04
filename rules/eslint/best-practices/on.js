@@ -19,7 +19,9 @@ module.exports = {
     // enforces consistent newlines before or after dots
     'dot-location': ['error', 'property'],
     // encourages use of dot notation whenever possible
-    'dot-notation': ['error', { allowKeywords: true }],
+    'dot-notation': ['error', {
+      allowKeywords: true
+    }],
     // require the use of === and !==
     eqeqeq: 'error',
     // make sure for-in loops have an if statement

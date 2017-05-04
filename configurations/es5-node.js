@@ -5,5 +5,7 @@ module.exports = {
     'bitovi/configurations/es5',
     'bitovi/rules/eslint/node/on'
   ],
-  env: {node: true}
+  env: {
+    node: true
+  }
 };
