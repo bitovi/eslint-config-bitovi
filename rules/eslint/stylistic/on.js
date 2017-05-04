@@ -185,7 +185,12 @@ module.exports = {
       nonwords: false
     }],
     // enforce consistent spacing after the //  or /* in a comment
-    'spaced-comment': 'error',
+    'spaced-comment': ['error', 'always', {
+      exceptions: [
+        '!steal-remove-start',
+        '!steal-remove-end'
+      ]
+    }],
     // require or disallow spacing between template tags and their literals
     'template-tag-spacing': 0,
     // require or disallow Unicode byte order mark (BOM)
