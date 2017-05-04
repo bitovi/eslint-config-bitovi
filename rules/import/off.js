@@ -60,6 +60,8 @@ module.exports = {
     // Forbid unassigned imports (no-unassigned-import)
     'import/no-unassigned-import': 0,
     // Forbid named default exports (no-named-default)
-    'import/no-named-default': 0
+    'import/no-named-default': 0,
+    // Forbid anonymous values as default exports
+    'no-anonymous-default-export': 0
   }
 };
