@@ -59,7 +59,10 @@ module.exports = {
     // enforce a maximum depth that blocks can be nested
     'max-depth': ['error', 6],
     // enforce a maximum line length
-    'max-len': 'warn',
+    'max-len': ['warn', {
+      code: 80,
+      ignoreComments: true
+    }],
     // enforce a maximum number of lines per file
     'max-lines': 0,
     // enforce a maximum depth that callbacks can be nested
@@ -135,7 +138,11 @@ module.exports = {
       allowMultiplePropertiesPerLine: true
     }],
     // enforce variables to be declared either together or separately in functions
-    'one-var': ['error', 'never'],
+    'one-var': ['error', {
+      var: 'always',
+      let: 'always',
+      const: 'never'
+    }],
     // require or disallow newlines around variable declarations
     'one-var-declaration-per-line': ['error', 'initializations'],
     // require or disallow assignment operator shorthand where possible

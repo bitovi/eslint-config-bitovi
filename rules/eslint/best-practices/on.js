@@ -67,7 +67,7 @@ module.exports = {
       ]
     }],
     // disallow var and named functions in global scope
-    'no-implicit-globals': 'warn',
+    'no-implicit-globals': 'off',
     // disallow use of eval()-like methods
     'no-implied-eval': 'error',
     // disallow this keywords outside of classes or class-like objects
