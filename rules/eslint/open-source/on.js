@@ -5,6 +5,7 @@
 // strict linting conventions. Additions to here should be discussed before approved.
 module.exports = {
   rules: {
-    "no-underscore-dangle": 0
+    'no-underscore-dangle': 0,
+    'one-var': 0
   }
 };
