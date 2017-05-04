@@ -2,7 +2,7 @@
 
 module.exports = {
   extends: [
-    './es5'
+    'bitovi/configurations/es5'
   ],
   env: {browser: true}
 };

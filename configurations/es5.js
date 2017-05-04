@@ -2,14 +2,14 @@
 
 module.exports = {
   extends: [
-    '../eslint/best-practices/on',
-    '../eslint/errors/on',
-    '../eslint/node/off',
-    '../eslint/strict/on',
-    '../eslint/stylistic/on',
-    '../eslint/variables/on',
-    '../filenames/on',
-    '../promise/on'
+    'bitovi/rules/eslint/best-practices/on',
+    'bitovi/rules/eslint/errors/on',
+    'bitovi/rules/eslint/node/off',
+    'bitovi/rules/eslint/strict/on',
+    'bitovi/rules/eslint/stylistic/on',
+    'bitovi/rules/eslint/variables/on',
+    'bitovi/rules/filenames/on',
+    'bitovi/rules/promise/on'
   ],
   parser: 'babel-eslint',
   parserOptions: {

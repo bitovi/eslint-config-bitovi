@@ -2,10 +2,10 @@
 
 module.exports = {
   extends: [
-    './es5',
-    '../rules/eslint/es6/on',
-    '../rules/import/on',
-    '../rules/promise/on'
+    'bitovi/configurations/es5',
+    'bitovi/rules/rules/eslint/es6/on',
+    'bitovi/rules/rules/import/on',
+    'bitovi/rules/rules/promise/on'
   ],
   parser: 'babel-eslint',
   parserOptions: {

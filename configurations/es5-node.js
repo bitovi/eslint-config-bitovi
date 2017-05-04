@@ -2,8 +2,8 @@
 
 module.exports = {
   extends: [
-    './es5',
-    '../eslint/node/on'
+    'bitovi/configurations/es5',
+    'bitovi/rules/eslint/node/on'
   ],
   env: {node: true}
 };
