@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-bitovi",
   "description": "This package provides Bitovi's .eslintrc as an extensible shared config.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Josh Dean <me@imjoshdean.com>",
   "license": "MIT",
   "homepage": "https://github.com/bitovi/eslint-config-bitovi",
