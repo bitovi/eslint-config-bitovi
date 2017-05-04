@@ -30,10 +30,26 @@ There seems to be some issues with eslint where unless you also globally install
 ```javascript
 {
   scripts: {
-    "lint": "./node_modules/.bin/eslint *.js"
+    "lint": "./node_modules/.bin/eslint **/*.js"
   }
 }
 ```
+
+## Contributions
+
+These conventions should rarely be touched. All of Bitovi's projects should follow these standards and thus any changes could cause considerable headaches across the board. Most changes and improvements to the project such as documentation, tests, etc are openly welcome; however, changes to our linting standards require a little bit more.
+
+### Linting Changes
+
+Everyone has an opinion, single quotes vs double quotes, tabs vs spaces, so on, and so forth. These conventions are meant to keep our code bases consistent, clean, and sane. Changes to our guidelines should be minimal and infrequent.
+
+If you have a specific change you wish to see done to the overall linting guidelines, you should file an issue specifying:
+
+1. The change you wish to see.
+2. Your reasoning for wanting the change.
+3. A passing and failing example with your change
+
+Discussion on the Github issue will be open until there are no more comments after 24-48 hours. At which point it will be decided on. If approved, you are welcome to submit a pull request with the changes.
 
 ## JavaScript Style Guide
 
