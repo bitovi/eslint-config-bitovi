@@ -7,7 +7,7 @@ Install ESLint along with this configuration package and related dev dependencie
 
 ```javascript
 $ yarn add -D eslint eslint-config-bitovi
-$ yarn add -D eslint-plugin-promise eslint-plugin-import eslint-plugin-filenames
+$ yarn add -D babel-eslint eslint-plugin-promise eslint-plugin-import eslint-plugin-filenames
 ```
 
 If you're behind the times and still using NPM (but we're judging you a little bit):
@@ -21,7 +21,56 @@ $ npm install --save-dev eslint-plugin-promise eslint-plugin-import eslint-plugi
 
 ### Configurations
 
+This package includes several different configurations you can use:
+
+- `bitovi`: ES6 configuration
+- `bitovi/off`: All ESLint rules turned off
+- `bitovi/es5`: ES5 configuration
+- `bitovi/es5-browser`: ES5 + Browser
+- `bitovi/es5-node`: ES5 + Node
+- `bitovi/es6`: ES6 configuration
+- `bitovi/es6-browser`: ES6 + Browser
+- `bitovi/es6-node`: ES6 + Node
+
+In order to utilize and extend your ESLint configuration with one of these, just include it in your `extends` array:
+
+```javascript
+{
+  // ...
+  "extends": [
+    "bitovi"
+  ],
+  // ...
+}
+```
+
 ### Using What You Want
+
+Outside of the basic configurations, you can also include/exclude specific rule sets. Each rule set has a corresponding `on.js` and `off.js` file, respectively. These include:
+
+- `rules/eslint/best-practices/`: ESLint Best Practices
+- `rules/eslint/errors/`: ESLint Possible Errors
+- `rules/eslint/es6/`: ESLint ECMAScript 6
+- `rules/eslint/node/`: ESLint Node.js and CommonJS
+- `rules/eslint/strict/`: ESLint Strict Mode
+- `rules/eslint/stylistic/`: ESLint Stylistic Issues
+- `rules/eslint/open-source/`: Bitovi Open Source Exceptions
+- `rules/filenames/`: ESLint File Names Custom Configurations
+- `rules/import/`: ESLint ESNext `import` Custom Configurations
+- `rules/promise/`: ESLint Promise Custom Configurations
+
+This allows a greater amount of flexibility to cater to specific needs in your project before writing your own rules. For example, you may not wish to include Bitovi's specific filename configurations, to which you would include in your `.eslintrc` file:
+
+```javascript
+{
+  // ...
+  "extends": [
+    "bitovi",
+    "bitovi/rules/filenames/off"
+  ],
+  // ...
+}
+```
 
 ### A note for your package.json
 
@@ -50,6 +99,3 @@ If you have a specific change you wish to see done to the overall linting guidel
 3. A passing and failing example with your change
 
 Discussion on the Github issue will be open until there are no more comments after 24-48 hours. At which point it will be decided on. If approved, you are welcome to submit a pull request with the changes.
-
-## JavaScript Style Guide
-
