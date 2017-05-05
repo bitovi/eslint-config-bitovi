@@ -7,7 +7,6 @@ Install ESLint along with this configuration package and related dev dependencie
 
 ```console
 $ yarn add -D eslint-config-bitovi
-$ yarn add -D babel-eslint eslint-plugin-promise eslint-plugin-import eslint-plugin-filenames
 ```
 
 If you're behind the times and still using NPM (but we're judging you a little bit):
