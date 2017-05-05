@@ -5,14 +5,14 @@ This package provides Bitovi's base JS .eslintrc as an extensible shared config.
 
 Install ESLint along with this configuration package and related dev dependencies:
 
-```javascript
+```console
 $ yarn add -D eslint eslint-config-bitovi
 $ yarn add -D babel-eslint eslint-plugin-promise eslint-plugin-import eslint-plugin-filenames
 ```
 
 If you're behind the times and still using NPM (but we're judging you a little bit):
 
-```javascript
+```console
 $ npm install --save-dev eslint eslint-config-bitovi
 $ npm install --save-dev eslint-plugin-promise eslint-plugin-import eslint-plugin-filenames
 ```
@@ -34,13 +34,11 @@ This package includes several different configurations you can use:
 
 In order to utilize and extend your ESLint configuration with one of these, just include it in your `extends` array:
 
-```javascript
+```json
 {
-  // ...
   "extends": [
     "bitovi"
   ],
-  // ...
 }
 ```
 
@@ -61,14 +59,12 @@ Outside of the basic configurations, you can also include/exclude specific rule 
 
 This allows a greater amount of flexibility to cater to specific needs in your project before writing your own rules. For example, you may not wish to include Bitovi's specific filename configurations, to which you would include in your `.eslintrc` file:
 
-```javascript
+```json
 {
-  // ...
   "extends": [
     "bitovi",
     "bitovi/rules/filenames/off"
   ],
-  // ...
 }
 ```
 
@@ -76,9 +72,9 @@ This allows a greater amount of flexibility to cater to specific needs in your p
 
 There seems to be some issues with eslint where unless you also globally install this config and plugins, it will not run. You can get around this by calling eslint by `./node_modules/.bin/eslint`. You'll probably want to do something like:
 
-```javascript
+```json
 {
-  scripts: {
+  "scripts": {
     "lint": "./node_modules/.bin/eslint **/*.js"
   }
 }
