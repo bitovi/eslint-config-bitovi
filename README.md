@@ -6,16 +6,22 @@ This package provides Bitovi's base JS .eslintrc as an extensible shared config.
 Install ESLint along with this configuration package and related dev dependencies:
 
 ```console
-$ yarn add -D eslint eslint-config-bitovi
+$ yarn add -D eslint-config-bitovi
 $ yarn add -D babel-eslint eslint-plugin-promise eslint-plugin-import eslint-plugin-filenames
 ```
 
 If you're behind the times and still using NPM (but we're judging you a little bit):
 
 ```console
-$ npm install --save-dev eslint eslint-config-bitovi
-$ npm install --save-dev eslint-plugin-promise eslint-plugin-import eslint-plugin-filenames
+$ npm install --save-dev eslint-config-bitovi
 ```
+
+This will install the following packages:
+
+- `eslint`: ESLint Proper
+- `eslint-plugin-import`: Linting for ES6+ import/export syntax
+- `eslint-plugin-promise`: Linting for JavaScript promise best practices
+- `eslint-plugin-filenames`: Linting for consistent filenames
 
 ## Using This Config
 
@@ -54,7 +60,7 @@ Outside of the basic configurations, you can also include/exclude specific rule 
 - `rules/eslint/stylistic/`: ESLint Stylistic Issues
 - `rules/eslint/open-source/`: Bitovi Open Source Exceptions
 - `rules/filenames/`: ESLint File Names Custom Configurations
-- `rules/import/`: ESLint ESNext `import` Custom Configurations
+- `rules/import/`: ESLint ES6+ `import` Custom Configurations
 - `rules/promise/`: ESLint Promise Custom Configurations
 
 This allows a greater amount of flexibility to cater to specific needs in your project before writing your own rules. For example, you may not wish to include Bitovi's specific filename configurations, to which you would include in your `.eslintrc` file:

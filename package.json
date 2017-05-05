@@ -17,7 +17,7 @@
     "node": ">= 4.0.0"
   },
   "dependencies": {},
-  "devDependencies": {
+  "peerDependencies": {
     "eslint": "^3.19.0",
     "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-import": "^2.2.0",
