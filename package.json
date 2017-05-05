@@ -18,6 +18,7 @@
   },
   "dependencies": {},
   "peerDependencies": {
+    "babel-eslint": "^7.2.3",
     "eslint": "^3.19.0",
     "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-import": "^2.2.0",

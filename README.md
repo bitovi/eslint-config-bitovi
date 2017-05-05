@@ -19,6 +19,7 @@ $ npm install --save-dev eslint-config-bitovi
 This will install the following packages:
 
 - `eslint`: ESLint Proper
+- `babel-eslint`: ESLint using babel to parse
 - `eslint-plugin-import`: Linting for ES6+ import/export syntax
 - `eslint-plugin-promise`: Linting for JavaScript promise best practices
 - `eslint-plugin-filenames`: Linting for consistent filenames
